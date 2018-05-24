@@ -1,0 +1,24 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Taviraj');
+body {
+  font-family: "Taviraj", serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+}
+
+.basic-container {
+  padding: 5px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+a {
+  color: white;
+}
