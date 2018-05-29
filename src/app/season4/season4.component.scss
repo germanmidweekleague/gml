@@ -13,7 +13,12 @@ a {
 	text-align: center;
   text-decoration: none;
 }
-
+p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
+}
 .head-blog *{
   text-align: center;
 	margin-bottom: 0;
