@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { RouterModule, Routes } from '@angular/router';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -44,6 +45,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
+import { Season4Component } from './season4/season4.component';
 
 
 @NgModule({
@@ -82,10 +84,14 @@ import { BlogComponent } from './blog/blog.component';
     MatToolbarModule,
     MatTooltipModule
   ],
-  declarations: []
+  declarations: [Season4Component]
 })
 export class DemoMaterialModule {}
-
+const appRoutes: Routes = [
+  { path: '', component: BlogComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'season4',      component: Season4Component }
+];
 @NgModule({
   imports: [
     BrowserModule,
@@ -96,7 +102,8 @@ export class DemoMaterialModule {}
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    RouterModule.forRoot( appRoutes )
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent, BlogComponent],

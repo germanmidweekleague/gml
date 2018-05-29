@@ -8,11 +8,12 @@
     <mat-sidenav class="the-dark-theme" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="40">
       <mat-nav-list>
-        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+        <a mat-list-item routerLink="/blog" >Blog</a>
+        <a mat-list-item routerLink="/season4" >Season 4</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-  		<app-blog></app-blog>
+  		<router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

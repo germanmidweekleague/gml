@@ -10,9 +10,6 @@ import {BlogComponent} from './blog/blog.component'
 export class AppComponent {
   mobileQuery: MediaQueryList;
 
-  fillerNav = ["blog",
-               "season 4"];
-
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
