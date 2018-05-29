@@ -1,8 +1,23 @@
+div {
+  position: relative;
+  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+}
 a {
   color: white;
+	text-align: center;
   text-decoration: none;
 }
 
+.head-blog *{
+  text-align: center;
+	margin-bottom: 0;
+}
 .inner-even {
   padding: 10%;
   background-color: #424242;
@@ -21,4 +36,12 @@ a {
 
 .inner {
   padding: 5vh;
+}
+
+.inner-4 {
+  padding-top: 0;
+}
+
+ol, ul{
+  text-align: left;
 }

@@ -1,4 +1,3 @@
-
 div {
   position: relative;
   text-align: center;
@@ -9,28 +8,20 @@ div {
 .container {
   width: 100%;
 }
+
 #banner {
-  background-image: url("assets/images/lclogo.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  //min-height: 100vh;
-	/*height: 100vh !important;
-	width: 100%;*/
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 }
+
 .banner-content {
-  margin-top: 20%;
-  margin-bottom: 20%;
   text-align: center;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 }
 
 .banner-content > * {
@@ -71,9 +62,12 @@ div {
   text-align: center;
   margin: auto;
 }
+
 a {
   color: white;
+	text-align: center;
   text-decoration: none;
+  margin: 2%;
 }
 .inner-even {
   padding: 10%;
@@ -81,6 +75,7 @@ a {
 }
 .head-blog *{
   text-align: center;
+	margin-bottom: 0;
 }
 .inner-even .inner {
   background-color: #212121;
